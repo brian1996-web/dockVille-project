@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Registration</title>
+  </head>
+  <body>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Fill in Your details</h2>
+            <p class="cta-text">
+              Cleaner,smarter and hassle-free Car servives are waiting for you.
+              Start Enjoying them today. You can book or cancel anytime. And the
+              first car service is on us!
+            </p>
+            <form
+              class="cta-form"
+              name="signup-form"
+              action="#"
+              id="form-signup"
+              onsubmit="return validate();"
+              method="POST"
+            >
+              <!-- action=# takes data to the backend -->
+              <div>
+                <label for="First-name">First Name</label>
+                <input
+                  id="First-name"
+                  type="text"
+                  name="firstname"
+                  placeholder="James "
+                />
+                <span id="FnameError"></span>
+              </div>
+              <div>
+                <label for="Last-name">Last Name</label>
+                <input
+                  id="Last-name"
+                  type="text"
+                  name="lastname"
+                  placeholder=" Milner"
+                  2
+                />
+                <span id="LnameError"></span>
+                <span id="FnameError"></span>
+              </div>
+
+              <a href="#">
+                <img
+                  class="logo"
+                  alt="DockVille logo"
+                  src="img/DockVille-logo.webp"
+                />
+              </a>
+
+              <!-- <div>
+              <label for="email">E-mail address</label>
+              <input
+                id="email"
+                type="email"
+                name="my email address"
+                placeholder="me@example.com"
+                required
+              />
+            </div> -->
+
+              <!-- <div>
+              <label for="email">Enter Your Password</label>
+              <input
+                id="email"
+                type="email"
+                name="my password"
+                placeholder="@Brian1998"
+                required
+              />
+            </div> -->
+              <!-- <div>
+              <label for="email">Confirm Your Pasword</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="@Brian1998"
+                required
+              />
+            </div>  -->
+
+              <!-- <div>
+              <label for="select-where">Where did you hear from us?</label>
+              <select id="select-where" required>
+                <option value=""> Please Choose one</option value="">
+                <option value="friends"> Friends and Family</option> 
+                <option value="youtube"> youtube video </option>
+                <option value="youtube"> Podcast </option>
+                <option value="youtube"> Face book ad </option>
+                <option value="youtube"> Others </option>
+              </select>
+            </div> -->
+
+              <button class="btn btn--form">Sign-up Now</button>
+
+              <!-- <input type="checkbox">
+            <input type="number"> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="validate.js"></script>
+  </body>
+</html>

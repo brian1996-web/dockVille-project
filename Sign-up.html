@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Create an Account</title>
+  </head>
+  <body>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <p class="heading-secondary">Registration details</p>
+            <!-- <p class="cta-text">
+              Cleaner,smarter and hassle-free Car servives are waiting for you.
+              Start Enjoying them today. You can book or cancel anytime. And the
+              first car service is on us!
+            </p> -->
+            <form
+              class="cta-form"
+              name="signupform"
+              action="#"
+              id="formsignup"
+              onsubmit="return Validate();"
+              method="POST"
+            >
+              <!-- action=# takes data to the backend -->
+
+              <div>
+                <label for="First-name">First Name </label>
+                <input
+                  id="First-name"
+                  type="text"
+                  name="firstname"
+                  placeholder="James "
+                />
+                <span id="FnameError"></span>
+              </div>
+
+              <div>
+                <label for="Last-name">Last Name</label>
+                <input
+                  id="Last-name"
+                  type="text"
+                  name="lastname"
+                  placeholder=" Milner"
+                />
+                <span id="LnameError"></span>
+              </div>
+
+              <div>
+                <label for="email">E-mail</label>
+
+                <span id="emailError"></span>
+
+                <input
+                  id="email"
+                  type="text"
+                  name="email"
+                  placeholder="XXX@mail.com"
+                />
+              </div>
+
+              <div>
+                <label for="phonenumber">Phone Number</label>
+                <input
+                  id="phonenumber"
+                  name="phone"
+                  type="tel"
+                  placeholder="+256"
+                />
+                <span id="phoneError"></span>
+              </div>
+
+              <div>
+                <label for="carmodel">CarModel</label>
+                <input id="carmodel" type="text" name="car" placeholder="" />
+                <span id="carTypeError"></span>
+              </div>
+
+              <div>
+                <label for="numberplate">Number Plate</label>
+                <input
+                  id="Nplate-Error"
+                  type="text"
+                  name="Nplate"
+                  placeholder=""
+                />
+              </div>
+              <div>
+                <label for="nin-error">NIN</label>
+                <input id="nin-error" type="text" name="nin" placeholder="" />
+              </div>
+              <div>
+                <label for="password">Enter Your Password</label>
+                <input
+                  id="password"
+                  type="password"
+                  name="my password"
+                  placeholder="@Brian1998"
+                />
+              </div>
+              <div>
+                <label for="confirm">Confirm Your Pasword</label>
+                <input id="confirm" type="text" placeholder="@Brian1998" />
+              </div>
+
+              <button class="btn btn--form" type="submit">Sign up</button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./DockvilleProject/js/registervalidation.js"></script>
+  </body>
+</html>

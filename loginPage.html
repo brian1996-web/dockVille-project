@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <section class="section-login">
+  <header>
+    <h1 class="heading-login">Enter your details</h1>
+  </header>
+  <body>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+           
+            <form class="cta-form" action="#" name="signupform" onsubmit="return Validate();"
+            method="POST">
+              <div>
+                <label for="Full-name">Full Name</label>
+                <input
+                  id="Full-name"
+                  type="text"
+                  name="fullName"
+                  placeholder=""/>
+                  <span id="FnameError"></span>
+              
+              </div>
+             
+
+              <div>
+                <label for="email">E-mail address</label>
+                <input id="email" type="email" placeholder="" name="email"/>
+                <span id="EmailError"></span>
+              </div>
+             
+              <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="text" placeholder="" />
+            </div>
+            
+              <button  type="submit" class="btn btn--form">Login</button>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <script src="./DockvilleProject/js/login.js"></script>
+  </body>
+</html>
