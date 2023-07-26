@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./form.css"/>"
+
+  <title>Car registration form</title>
+</head>
+<body>
+  <section class="section-cta">
+    <div class="container">
+      <div class="cta">
+        <div class="cta-text-box">
+          <p class="heading-secondary">Registration details</p>
+          <!-- <p class="cta-text">
+            Cleaner,smarter and hassle-free Car servives are waiting for you.
+            Start Enjoying them today. You can book or cancel anytime. And the
+            first car service is on us!
+          </p> -->
+          <form
+            class="cta-form"
+            name="signupform"
+            action="#"
+            id="formsignup"
+            onsubmit="return Validate(event);"
+            method="POST"
+          >
+            <!-- action=# takes data to the backend -->
+
+            <div>
+              <label for="First-name">Driver Name </label>
+              <input
+                id="First-name"
+                type="text"
+                name="firstname"
+                placeholder="James "
+              />
+              <span id="FnameError">*</span>
+            </div>
+
+            <div>
+              <label for="numberplate">Number Plate</label>
+              <input
+                id="Nplate-Error"
+                type="text"
+                name="Nplate"
+                placeholder=""
+              />
+              <span id="Nplate-Error">*</span>
+            </div>
+
+
+            <div>
+              <label for="color">Color</label>
+
+              <span id="emailEror">*</span>
+
+              <input
+                id="color"
+                type="text"
+                name="color"
+                placeholder=""
+              />
+            </div>
+            
+            <div>
+              <label for="arrival-time">Arrival Time</label>
+              <input
+                id="arrival-time"
+                type="text"
+                name="Nplate"
+                placeholder=""
+              />
+              <span id="Nplate-Error">*</span>
+            </div>
+
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Car Model</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose what to park.</option>
+                <option>Truck</option>
+                <option>Personal Car</option>
+                <option>Taxis</option>
+                <option>Coasters</option>
+                <option>Boda bodas</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="time">Time</label>
+
+              <span id="emailEror">*</span>
+
+              <input
+                id="time"
+                type="text"
+                name="time"
+                placeholder=""
+              />
+            </div>
+
+            <div>
+              <label for="phonenumber">Phone Number</label>
+              <input
+                id="phonenumber"
+                name="phone"
+                type="tel"
+                placeholder="+256"
+              />
+              <span id="phoneError">*</span>
+            </div>
+
+
+            <div>
+              <label for="niN-error">NIN</label>
+              <input id="niN-error" type="nin" name="nin" placeholder="" />
+              <span id="nin-error">*</span>
+            </div>
+
+         
+            <button class="btn btn--form" type="submit">Submit</button>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

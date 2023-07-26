@@ -1,0 +1,8 @@
+{
+<<<<<<< HEAD
+  "git.ignoreLimitWarning": true,
+  "liveServer.settings.port": 5501
+=======
+  "liveServer.settings.port": 5502
+>>>>>>> 627e024 (adding the forms)
+}
